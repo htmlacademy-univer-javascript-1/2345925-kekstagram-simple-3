@@ -8,13 +8,17 @@ function checkLength(str = '', maxLength = 0) {
   if(str.length <= maxLength) return true;
   return false;
 }
-//Тестирование
 
-let s = '';
+let mass = [];
 
-for(let i = 0; i < 10; i++){
-  console.log(getRandomInteger(0.5, 2.7));
-  s += i;
-  //console.log(checkLength(s, 2));
+for(let i = 0; i < 25; i++){
+  mass[i] = {
+    id: i+1,
+    url: 'photos/' + (i+1) + '.jpg',
+    description: 'Я - прекрасное описание картинки с id равным: ' + (i+1),
+    likes: getRandomInteger(15, 200),
+    comments: getRandomInteger(0, 200)
+  }
 }
-console.log(checkLength());
+
+//console.log(mass[24]);
