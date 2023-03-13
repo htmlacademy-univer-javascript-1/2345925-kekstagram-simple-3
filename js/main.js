@@ -4,12 +4,12 @@ function getRandomInteger (from, to) {
   return  Math.floor(Math.random()*(high - low + 1) + low);
 }
 
-function checkLength(str = '', maxLength = 0) {
-  if(str.length <= maxLength) return true;
-  return false;
+function checkLength(str, maxLength) {
+  return str.length <= maxLength;
 }
-//Тестирование
 
+//Тестирование
+/*
 let s = '';
 
 for(let i = 0; i < 10; i++){
@@ -18,3 +18,4 @@ for(let i = 0; i < 10; i++){
   //console.log(checkLength(s, 2));
 }
 console.log(checkLength());
+*/
